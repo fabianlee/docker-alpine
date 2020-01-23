@@ -15,21 +15,11 @@ This image features:
 
 ## Versions
 
-- `3.3.0`, `latest` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v3.3.0/alpine-base/Dockerfile)
-- `3.2.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v3.2.0/alpine-base/Dockerfile)
-- `3.1.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v3.1.0/alpine-base/Dockerfile)
-- `3.0.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v3.0.0/alpine-base/Dockerfile)
-- `2.0.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v2.0.0/alpine-base/Dockerfile)
-- `1.2.1` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v1.2.1/alpine-base/Dockerfile)
-- `1.2.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v1.2.0/alpine-base/Dockerfile)
-- `1.1.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v1.1.0/alpine-base/Dockerfile)
-- `1.0.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/blob/alpine-base-v1.0.0/alpine-base/Dockerfile)
-
-[See VERSIONS.md for image contents.](https://github.com/smebberson/docker-alpine/blob/master/alpine-base/VERSIONS.md)
+- `3.11.3`
 
 ## Usage
 
-To use this image include `FROM smebberson/alpine-base` at the top of your `Dockerfile`. Starting from `smebberson/alpine-base` provides you with the ability to easily start any service using s6. s6 will also keep it running for you, restarting it when it crashes.
+To use this image include `FROM fabianlee/alpine-base:3.11.3` at the top of your `Dockerfile`. Starting from `smebberson/alpine-base` provides you with the ability to easily start any service using s6. s6 will also keep it running for you, restarting it when it crashes.
 
 [Read more about extending this image with your own services](https://github.com/smebberson/docker-alpine/tree/master/#using-services).
 
