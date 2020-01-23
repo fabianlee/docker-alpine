@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv sh
+
+echo "30 start"
+mkdir -p /run/apache2
+echo "30 apache2 create"
+
+# clear old pid
+[[ -e /run/apache2/httpd.pid ]] && \
+        rm /run/apache2/httpd.pid
+echo "30 done"

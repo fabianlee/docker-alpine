@@ -1,4 +1,6 @@
-FROM alpine:3.9
+# FAB updated alpine version to jan 16 2020 version
+ARG ALPINE_BASE_VERSION=3.11.3
+FROM alpine:$ALPINE_BASE_VERSION
 MAINTAINER Scott Mebberson (https://github.com/smebberson/docker-alpine)
 
 # Add s6-overlay

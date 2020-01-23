@@ -1,3 +1,10 @@
 #!/usr/bin/with-contenv sh
 
-exec /usr/sbin/apachectl -DFOREGROUND;
+mkdir -p /run/apache2
+
+# FAB
+#exec /usr/sbin/apachectl -DFOREGROUND;
+
+# https://stackoverflow.com/questions/38035726/how-do-i-run-apache-2-on-alpine-in-docker#38035997
+exec /usr/sbin/httpd -DFOREGROUND;
+#exec /usr/sbin/httpd -DFOREGROUND -e debug;
