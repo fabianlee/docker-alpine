@@ -17,7 +17,7 @@ This image features:
 
 ## Usage
 
-To use this image include `FROM fabianlee/alpine-apache` at the top of your `Dockerfile`, or simply `docker run -p 80:80 -p 443:443 --name apache fabianlee/alpine-apache`.
+To use this image include `FROM fabianlee/alpine-apache:2.4.41-r0` at the top of your `Dockerfile`, or simply `docker run -p 80:80 -p 443:443 --name apache fabianlee/alpine-apache:2.4.41-r0`.
 
 Apache logs (access and error logs) aren't automatically streamed to `stdout` and `stderr`. To review the logs, you can do one of two things:
 

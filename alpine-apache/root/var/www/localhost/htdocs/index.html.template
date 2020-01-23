@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Welcome to apache!</h1>
-<h2>The <a href="https://github.com/fabianlee/docker-alpine">fabianlee/alpine-apache</a>:${VERSION} variant.</h2>
+<h2>The <a href="https://github.com/fabianlee/docker-alpine/tree/master/alpine-apache">fabianlee/alpine-apache</a>:${VERSION} variant.</h2>
 <p>If you see this page, the apache web server is successfully installed and
 working. Further configuration is required.</p>
 
