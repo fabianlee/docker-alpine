@@ -5,6 +5,13 @@ This image belongs to a suite of images [documented here][dockeralpine].
 
 Image size is ~20.1 MB.
 
+## REASON FOR FORK
+
+Take note, this project is a fork of [smebberson/docker-alpine](https://github.com/smebberson/docker-alpine), but this root project has an [issue #71](https://github.com/smebberson/docker-alpine/issues/71) that has not been addressed and it causes apache to fail.  There are pull requests outstanding [88](https://github.com/smebberson/docker-alpine/pull/88) and [89](https://github.com/smebberson/docker-alpine/pull/89) but until these are applied, the alpine-apache image is not usable.
+
+I forked the project, updated to the latest alpine, applied the pull requests, and added Makefile to build the images instead of requiring vagrant.  Hopefully at some point in the future, smebberson will merge the pull requests and this repository can be deprecated.
+
+
 ## Features
 
 This image features:
