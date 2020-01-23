@@ -13,15 +13,11 @@ This image features:
 
 ## Versions
 
-- `2.0.1`, `latest` [(Dockerfile)](https://github.com/smebberson/docker-alpine/tree/alpine-apache-v2.0.1/alpine-apache)
-- `2.0.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/tree/alpine-apache-v2.0.0/alpine-apache)
-- `1.0.0` [(Dockerfile)](https://github.com/smebberson/docker-alpine/tree/alpine-apache-v1.0.0/alpine-apache)
-
-[See VERSIONS.md for image contents.](https://github.com/smebberson/docker-alpine/blob/master/alpine-apache/VERSIONS.md)
+- `2.4.41-r0 `
 
 ## Usage
 
-To use this image include `FROM smebberson/alpine-apache` at the top of your `Dockerfile`, or simply `docker run -p 80:80 -p 443:443 --name apache smebberson/alpine-apache`.
+To use this image include `FROM fabianlee/alpine-apache` at the top of your `Dockerfile`, or simply `docker run -p 80:80 -p 443:443 --name apache fabianlee/alpine-apache`.
 
 Apache logs (access and error logs) aren't automatically streamed to `stdout` and `stderr`. To review the logs, you can do one of two things:
 
@@ -92,5 +88,3 @@ exec /usr/sbin/apachectl -DFOREGROUND;
 An example of using this image can be found in [examples/user-apache][alpineapache].
 
 [apache]: https://httpd.apache.org/
-[dockeralpine]: https://github.com/smebberson/docker-alpine
-[alpineapache]: https://github.com/smebberson/docker-alpine/tree/master/examples/user-apache
