@@ -39,3 +39,7 @@ docker-logs:
 ## stops container running in background
 docker-stop:
 	sudo docker stop $(PROJECT)
+
+## pushes to docker hub
+docker-push:
+	sudo docker push $(OPV)
